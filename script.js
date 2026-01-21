@@ -14,9 +14,14 @@ function makeGrid(num) {
 
 makeGrid(16);
 
+function generateRandomHexColor() {
+  const randomHex = Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+  return `#${randomHex}`;
+}
+
 container.addEventListener('mouseover', (e) => {
     if (e.target.parentElement.classList.contains("row")) {
-        e.target.style.backgroundColor = 'white';
+        e.target.style.backgroundColor = generateRandomHexColor();
     }
 })
 
