@@ -1,18 +1,26 @@
 .container {
+    height: 960px;
+    width: 960px;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .row {
+    height: 100%;
+    width: 100%;
+    background-color: black;
     display: flex;
     flex-direction: row;
 }
 
 .row div {
-    height: 30px;
-    width: 30px;
+    flex-grow: 1;
+    min-height: 1px;
+    min-width: 1px;
     background-color: black;
 }
 
