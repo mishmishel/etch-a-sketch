@@ -19,8 +19,6 @@
 
 .row div {
     flex-grow: 1;
-    min-height: 1px;
-    min-width: 1px;
     background-color: black;
 }
 
